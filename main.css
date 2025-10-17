@@ -43,6 +43,7 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
+  
 }
 
 .hero__image img {
@@ -71,7 +72,7 @@ body {
 
 .button.button--primary {
   font-weight: bold;
-  background-color: #457b9d;
+  background-color: #8ACFE5;
   color: #011827;
 }
 
@@ -102,18 +103,18 @@ body {
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 8px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0 1rem 0.9rem;
+
 
 }
 
 /* Bilden */
-.testimonial__picture img {
+.testimonial__image img {
   grid-area: 1;
   max-width: 73px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto;
+ 
 }
 
 /*
@@ -125,14 +126,16 @@ body {
 .testimonial__quote {
   grid-area: 1;
   font-style: italic;
-  margin: 0;
+  margin-left: 0;
   font-size: 24px;
+  margin-bottom:0;
 }
 
 .testimonial__person {
   font-size: 0.85rem;
   color: #555;
-  margin-top: 0.25rem;
+  margin-top:0;
+  
 }
 
 .testimonial:nth-child(2) {
@@ -145,7 +148,6 @@ body {
 .challenge-card__title {
   grid-area: title;
   font-size: 28px;
-  font-weight: 700;
   padding: 0 1rem;
   margin-top: 0.5rem;
 }
@@ -288,19 +290,6 @@ body {
   max-width: 250px;
 }
 
-.button.button--primary {
-  font-weight: bold;
-  background-color: #457b9d;
-  color: #011827;
-}
-
-.button--secondary {
-  background-color: #e63946;
-  color: #fff;
-  display: none;
-}
-
-
 .article {
   background-color: #011827;
   width: 100%;
@@ -344,7 +333,7 @@ body {
   margin: 24px 18px 10px 20px;
 }
 
-.promo-section__picture img {
+.promo-section__image img {
   display: block;
   width: 100%;
   height: auto;
@@ -472,7 +461,7 @@ body {
   .hero__image {
     position: relative;
     width: 100%;
-    aspect-ratio: 16/9;
+    height:100vh;
     overflow: visible;
     /* viktigt, annars klipps knapparna*/
   }
@@ -545,7 +534,7 @@ body {
     gap: 0.5rem;
   }
 
-  .testimonial__picture img {
+  .testimonial__image img {
     max-width: 100px;
     /* styr storleken på bilden */
     border-radius: 50%;
@@ -618,14 +607,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* bild + text */
-
     gap: 0.5rem;
     /* mindre avstånd */
   }
 
   .promo-section__picture img {
     width: 100%;
-
   }
 
   .promo-section__content {
@@ -633,8 +620,6 @@ body {
     /* behåll om du vill ha en maxbredd */
     margin: 0 auto;
     /* centrera i sin kolumn istället för fast 100px */
-
-
   }
 
   .promo-section__title {
@@ -655,7 +640,7 @@ body {
     padding: 10px 51px 10px 51px;
   }
 
-  .promo-section--reverse .promo-section__picture {
+  .promo-section--reverse .promo-section__image {
     order: 2;
   }
 
@@ -736,7 +721,13 @@ body {
     padding: 1rem;
   }
 
-  .promo-section__picture img {
+  .testimonial{
+  padding: 0;
+  max-width: 530px;
+  margin:0;
+
+  }
+  .promo-section__image img {
     max-width: 640px;
   }
 
